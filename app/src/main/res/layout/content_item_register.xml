@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.activity.ItemRegisterActivity"
+    tools:showIn="@layout/activity_item_register">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputEmpName"
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin">
+                <EditText
+                    android:id="@+id/editTextConfPassword"
+                    style="@style/modifiedEditText"
+                    android:hint="@string/name"
+                    android:fontFamily="@font/titillium_web"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_16dp"
+                android:text="@string/type"></TextView>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="@string/role"/>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin">
+                <EditText
+                    style="@style/modifiedEditText"
+                    android:hint="@string/brand"
+                    android:fontFamily="@font/titillium_web"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputEmpMobile"
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin">
+                <EditText
+                    android:id="@+id/editTextEmpMobile"
+                    style="@style/modifiedEditText"
+                    android:hint="@string/size"
+                    android:fontFamily="@font/titillium_web"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin">
+                <EditText
+                    style="@style/modifiedEditText"
+                    android:hint="@string/purchase_price"
+                    android:fontFamily="@font/titillium_web"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin">
+                <EditText
+                    style="@style/modifiedEditText"
+                    android:hint="@string/selling_price"
+                    android:fontFamily="@font/titillium_web"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin">
+                <EditText
+                    style="@style/modifiedEditText"
+                    android:hint="@string/purchase_date"
+                    android:fontFamily="@font/titillium_web"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/cirLoginButton"
+                style="@style/loginButton"
+                android:text="@string/submit"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/titillium_web_bold"
+                android:layout_marginTop="@dimen/loginViewsMargin"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

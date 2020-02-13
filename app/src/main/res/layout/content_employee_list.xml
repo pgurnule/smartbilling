@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.activity.EmployeeListActivity"
+    tools:showIn="@layout/activity_employee_list">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_employee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingBottom="100dp"/>
+        <Button
+            android:id="@+id/btn_add_employee"
+            style="@style/loginButton"
+            android:text="+ Add Employee"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="@dimen/padding_16dp"
+            android:layout_marginBottom="@dimen/padding_16dp"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+</FrameLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/crd_order"
+    app:cardElevation="1dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/padding_10_dp"
+    android:paddingBottom="@dimen/padding_10_dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_10_dp"
+        android:paddingRight="@dimen/padding_10_dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/titillium_web_bold"
+            android:textColor="@color/black"
+            android:text="OD12345"/>
+        <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_completed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_tick"
+        android:drawablePadding="5dp"
+        android:textSize="10dp"
+        android:paddingRight="10dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textColor="@color/whiteCardColor"
+        android:background="@drawable/textview_rounded_corner_layout"
+        android:text="Completed" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_10_dp"
+        android:paddingRight="@dimen/padding_10_dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/titillium_web"
+                android:text="Name"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_minus5dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/titillium_web_semibold"
+                android:text="Anil Ingole"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/titillium_web"
+                android:text="Mobile"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_minus5dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/titillium_web_semibold"
+                android:text="7841069144"/>
+        </LinearLayout>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginTop="@dimen/margin_5dp"
+    android:layout_marginBottom="@dimen/margin_5dp"
+    android:background="?android:attr/dividerVertical"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_10_dp"
+        android:paddingRight="@dimen/padding_10_dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="@font/titillium_web"
+            android:text="2 Hrs ago"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/titillium_web_bold"
+            android:textColor="@color/black"
+            android:text="Rs. 4000"/>
+    </RelativeLayout>
+</LinearLayout>
+</androidx.cardview.widget.CardView>

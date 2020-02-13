@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="@dimen/padding_10_dp"
+    android:layout_height="match_parent">
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/in_percent"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fix_amount"/>
+
+    </RadioGroup>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputShopAddress"
+        style="@style/parent"
+        android:layout_marginTop="@dimen/loginViewsMargin">
+        <EditText
+            android:id="@+id/editTextShopAddress"
+            style="@style/modifiedEditText"
+            android:inputType="textEmailAddress"
+            android:fontFamily="@font/titillium_web"
+            android:maxLines="1"
+            android:hint="@string/discount_amount"/>
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

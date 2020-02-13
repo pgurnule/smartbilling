@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="@dimen/padding_10_dp"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputName"
+        style="@style/parent"
+        android:layout_marginTop="@dimen/loginViewsMargin">
+        <EditText
+            android:id="@+id/editTextName"
+            style="@style/modifiedEditText"
+            android:inputType="textEmailAddress"
+            android:fontFamily="@font/titillium_web"
+            android:maxLines="1"
+            android:hint="@string/customer_name"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputMobile"
+        style="@style/parent"
+        android:layout_marginTop="@dimen/loginViewsMargin">
+        <EditText
+            android:id="@+id/editTextMobile"
+            style="@style/modifiedEditText"
+            android:inputType="textEmailAddress"
+            android:fontFamily="@font/titillium_web"
+            android:maxLines="1"
+            android:hint="@string/customer_mobile"/>
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>
