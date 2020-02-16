@@ -1,5 +1,7 @@
-package com.billbook.model;
+package com.billbook.model.request;
 
+import com.billbook.model.request.Address;
+import com.billbook.model.request.Branch;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 

@@ -4,7 +4,7 @@ import android.content.Context;
 
 import com.billbook.api.ApiCall;
 import com.billbook.api.RequestNotifier;
-import com.billbook.model.ShopDetails;
+import com.billbook.model.request.ShopDetails;
 import com.billbook.observer.ShopRegistrationObserver;
 
 import retrofit2.Response;

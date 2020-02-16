@@ -1,4 +1,4 @@
-package com.billbook.model;
+package com.billbook.model.request;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

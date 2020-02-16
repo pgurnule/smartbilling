@@ -1,16 +1,13 @@
 package com.billbook.ui.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import com.billbook.controller.ShopRegistrationController;
-import com.billbook.model.Address;
-import com.billbook.model.Branch;
-import com.billbook.model.ShopDetails;
+import com.billbook.model.request.Address;
+import com.billbook.model.request.Branch;
+import com.billbook.model.request.ShopDetails;
 import com.billbook.observer.ShopRegistrationObserver;
 import com.billbook.util.VU;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
