@@ -3,7 +3,7 @@ package com.billbook.api;
 import android.content.Context;
 
 
-import com.billbook.model.ShopDetails;
+import com.billbook.model.request.ShopDetails;
 
 import retrofit2.Call;
 import retrofit2.Callback;
